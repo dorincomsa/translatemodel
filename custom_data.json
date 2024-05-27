@@ -1,0 +1,4202 @@
+[
+    {
+        "question": "What are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much have been spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "How much money have I spent on supermarket",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' supermarket '"
+    },
+    {
+        "question": "What is the total amount spent on supermarket in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' supermarket ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the restaurant expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much have been spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "How much money have I spent on restaurant",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' restaurant '"
+    },
+    {
+        "question": "What is the total amount spent on restaurant in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' restaurant ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much have been spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "How much money have I spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"
+    },
+    {
+        "question": "what are the others expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much have been spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "How much money have I spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"
+    },
+    {
+        "question": "What is the total amount spent on others in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' others ' AND month =  ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "How much money have I spent in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE month = ' <month> '"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent each month last year",
+        "query": "SELECT month , SUM(value) FROM expenses GROUP BY month"
+    }
+]
