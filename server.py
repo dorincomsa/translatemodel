@@ -4,12 +4,12 @@ import re
 import unicodedata
 from urllib.parse import urlparse
 
-from model import Seq2seq
+from model import Seq2Seq
 from sql import SQL
 from dateutil import parser
 
-model = Seq2seq()
-model.loadModel()
+model = Seq2Seq()
+model.load_model()
 
 sql = SQL()
 
@@ -53,7 +53,7 @@ def post_process(query, values):
   return processed_query
 
 
-class HTTPRequestHandler(BaseHTTPRequestHandler):
+class HttpController(BaseHTTPRequestHandler):
 
   def set_headers(self, status_code=200, content_type='application/json'):
     self.send_response(status_code)
@@ -65,41 +65,42 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
 
   def do_OPTIONS(self):
     self.set_headers()
-    # self.send_response(200, "ok")
-    # self.send_header('Access-Control-Allow-Origin', '*')
-    # self.send_header('Access-Control-Allow-Methods', 'GET, OPTIONS')
-    # self.send_header("Access-Control-Allow-Headers", "X-Requested-With")
-    # self.send_header("Access-Control-Allow-Headers", "Content-Type")
-    # self.end_headers()
 
   def do_POST(self):
     content_length = int(self.headers['Content-Length'])
     post_data = self.rfile.read(content_length).decode('utf-8')
     json_data = json.loads(post_data)
 
-    self.set_headers()
-    # self.send_response(200)
-    # self.send_header('Content-type', 'application/json')
-    # self.send_header('Access-Control-Allow-Origin', '*')
-    # self.send_header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
-    # self.send_header('Access-Control-Allow-Headers', 'Content-Type, Authorization')
-    # self.end_headers()
-
-    # Constructing response message
-    print(self.path)
+    
     if(self.path == '/conversations'):
       
-      question = json_data.get('question')
-      processed_question, values = pre_process(question)
-      # query = 'query'
-      query = model.translate(processed_question)
-      print(query)
-      processed_query = post_process(query[0],values)
-      print(processed_query)
+      processed_query = ""
+      conversation = None
 
-      response = sql.executeQuery(processed_query)
-      response = json.dumps(response)
-      conversation = sql.insertConversation(question, response)
+      try:
+        question = json_data.get('question')
+        processed_question, values = pre_process(question)
+        query = model.translate(processed_question)
+        processed_query = post_process(query[0], values)
+      except:
+        self.set_headers(500)
+        self.wfile.write(json.dumps({'error': 'Error generating the query'}).encode('utf-8'))
+        return
+        
+      try:
+        response = sql.executeQuery(processed_query)
+        response = json.dumps(response)
+        conversation = sql.insertConversation(question, response)
+      except:
+        self.set_headers(500)
+        self.wfile.write(json.dumps({
+          'error': 'Error executing the query'
+        }).encode('utf-8'))
+        return
+
+      
+      conversation['query'] = processed_query
+      self.set_headers()
       self.wfile.write(json.dumps(conversation).encode('utf-8'))
 
     if(self.path == '/expenses'):
@@ -110,21 +111,15 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
       year = date.year
       month = date.strftime('%b').lower()
       day = date.day
+
       expense = sql.insertExpense(name, category, value, year, month, day)
+
+      self.set_headers()
       self.wfile.write(json.dumps(expense).encode('utf-8'))
 
   def do_GET(self):
-    # Sending response
-    # self.send_response(200)
-    # self.send_header('Content-type', 'application/json')
-    # self.send_header('Access-Control-Allow-Origin', '*')
-    # self.send_header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
-    # self.send_header('Access-Control-Allow-Headers', 'Content-Type, Authorization')
-    # self.end_headers()
     self.set_headers()
 
-
-    print(self.path)
     if(self.path == '/conversations'):
       response = sql.getConversations()
       self.wfile.write(json.dumps(response).encode('utf-8'))
@@ -135,12 +130,6 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
       self.wfile.write(json.dumps(response).encode('utf-8'))
 
   def do_DELETE(self):
-    # self.send_response(200)
-    # self.send_header('Content-type', 'application/json')
-    # self.send_header('Access-Control-Allow-Origin', '*')
-    # self.send_header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
-    # self.send_header('Access-Control-Allow-Headers', 'Content-Type, Authorization')
-    # self.end_headers()
     self.set_headers()
 
     parsed_path = urlparse(self.path)
@@ -169,6 +158,6 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
 
 host = 'localhost'
 port = 8080
-httpd = HTTPServer((host, port), HTTPRequestHandler)
+httpd = HTTPServer((host, port), HttpController)
 print(f'Server stared on port: {port}')
 httpd.serve_forever()

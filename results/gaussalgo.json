@@ -1,0 +1,52 @@
+[{"question": "How much have been spent on services", "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '"}, {"question": "What is the total amount spent on travel in <month>", "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '"}, {"question": "What is the total amount spent on services in <month>", "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '"}, {"question": "What is the total amount spent on others", "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"}, {"question": "What is the total amount spent on others", "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '"}, {"question": "what are the supermarket expenses", "query": "SELECT * FROM expenses WHERE category = ' supermarket '"}, {"question": "what are the services expenses", "query": "SELECT * FROM expenses WHERE category = ' services '"}, {"question": "what are the travel expenses", "query": "SELECT * FROM expenses WHERE category = ' travel '"}, {"question": "What is the total amount spent in <month> for each category", "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category"}, {"question": "How much money have I spent on travel", "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '"}][
+    {
+        "question": "How much have been spent on services",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' services '",
+        "model_querie": "SELECT sum(value) FROM expenses WHERE category ='services'"
+    },
+    {
+        "question": "What is the total amount spent on travel in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' travel ' AND month =  ' <month> '",
+        "model_querie": "SELECT sum(value) FROM expenses WHERE month = month"
+    },
+    {
+        "question": "What is the total amount spent on services in <month>",
+        "query": "SELECT SUM(value) FROM expenses WHERE category = ' services ' AND month =  ' <month> '",
+        "model_querie": "SELECT sum(value) FROM expenses WHERE month = month"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '",
+        "model_querie": "SELECT sum(T1.value) FROM expenses AS T1 JOIN others AS T2 ON T1.category = T2.category WHERE T2.name = 'other'"
+    },
+    {
+        "question": "What is the total amount spent on others",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' others '",
+        "model_querie": "SELECT sum(T1.value) FROM expenses AS T1 JOIN others AS T2 ON T1.category = T2.category WHERE T2.name = 'other'"
+    },
+    {
+        "question": "what are the supermarket expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' supermarket '",
+        "model_querie": "SELECT t1.value FROM expenses AS t1 JOIN supermarket AS t2 ON t1.category = t2.category WHERE t2.name ='supermarket'"
+    },
+    {
+        "question": "what are the services expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' services '",
+        "model_querie": "SELECT category FROM expenses WHERE service ='service'"
+    },
+    {
+        "question": "what are the travel expenses",
+        "query": "SELECT * FROM expenses WHERE category = ' travel '",
+        "model_querie": "SELECT T2.name FROM expenses AS T1 JOIN trip AS T2 ON T1.category = T2.category WHERE T2.date = 'travel'"
+    },
+    {
+        "question": "What is the total amount spent in <month> for each category",
+        "query": "SELECT category , SUM(value) FROM expenses WHERE month = ' <month> ' GROUP BY category",
+        "model_querie": "SELECT sum(value), category FROM expenses GROUP BY category"
+    },
+    {
+        "question": "How much money have I spent on travel",
+        "query": "SELECT SUM(value) FROM expenses WHERE category =  ' travel '",
+        "model_querie": "SELECT sum(T1.value) FROM expenses AS T1 JOIN travel AS T2 ON T1.category = T2.category WHERE T2.name = 'travel'"
+    }
+]

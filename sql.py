@@ -87,5 +87,5 @@ sql = SQL()
 # sql.dropTables()
 # sql.createTables()
 
-# res = sql.execQuery('DELETE from conversations')
+# res = sql.executeQuery('DELETE from conversations')
 # print(res)
